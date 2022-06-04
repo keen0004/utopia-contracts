@@ -31,4 +31,9 @@ Then, go to the repository's root folder and run this to deploy your contract:
 npx hardhat run scripts/deploy.js --network ganache
 ```
 
+If you want to deploy to the main network, you can apply for an access point in [infura](https://infura.io/), and set the environment variable INFURA_PROJECT_ID as the project id of infura, and set the private key of the account you need to use through the environment variable ACCOUNT_PRIVATE_KEY
+
+```sh
+npx hardhat run scripts/deploy.js --network mainnet
+```
 
